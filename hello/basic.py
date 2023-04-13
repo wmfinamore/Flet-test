@@ -1,8 +1,8 @@
 import flet as ft
 
 def main(page: ft.Page):
-    page.window_width = 450
-    page.window_height = 300
+    #page.window_width = 450
+    #page.window_height = 300
     page.title = 'Meu Programa Básico'
     #page.vertical_alignment = 'center'
     #page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
@@ -18,6 +18,12 @@ def main(page: ft.Page):
                       font_family = 'Open Sans')
     
     page.add(titulo1, titulo2)
+    
+    imagem1 = ft.Image(src = f"https://picsum.photos/536/354",
+                       width = 300,
+                       height = 300,
+                       fit = ft.ImageFit.CONTAIN)
+    page.add(imagem1)
     
     page.update()
     
