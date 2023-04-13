@@ -9,6 +9,12 @@ def main(page: ft.Page):
     #page.bgcolor = ft.colors.AMBER_50
     page.padding = 20
     
+    menu1 = ft.Icon(ft.icons.MENU)
+    texto1 = ft.Text('Menu')
+    pesquisar1 = ft.Icon(ft.icons.SEARCH)
+    txtpesquisar1 = ft.Text('Pesquisar')
+    page.add(menu1, texto1, pesquisar1, txtpesquisar1)
+    
     ft.Text()
     titulo1 = ft.Text('Cadastro de Paciente')
     titulo2 = ft.Text(value = 'Cadastro de Paciente',
