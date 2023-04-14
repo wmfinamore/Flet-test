@@ -14,6 +14,17 @@ def main(page: ft.Page):
         border_radius = ft.border_radius.all(25),
         padding = 5
     )
-    page.add(bloco1)
+    
+    bloco2 = ft.Container(
+        content = ft.TextField(label = 'Digite o Nome: ',
+                               color = 'black',
+                               value = 'Nome Completo'),
+        bgcolor = ft.colors.AMBER_50,
+        border_radius = ft.border_radius.only(bottomLeft = 5,
+                                              bottomRight = 25),
+        padding = 5
+    )
+    
+    page.add(bloco1, bloco2)
     
 ft.app(target = main)
