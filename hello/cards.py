@@ -1,0 +1,15 @@
+import flet as ft
+
+def main(page: ft.Page):
+    page.title = 'Meu Programa'
+    
+    cartao1 = ft.Card(content = ft.Container(
+        content = ft.Column([ft.ListTile(leading = ft.Icon(ft.icons.PLAY_ARROW),
+                                          title = ft.Text('Bruce Srpingsteen'),
+                                          subtitle = ft.Text('Dancing in the Dark')),
+                             ft.Row([ft.TextButton('Comprar')],
+                                    alignment = 'end')])
+    ))
+    page.add(cartao1)
+    
+ft.app(target = main)
