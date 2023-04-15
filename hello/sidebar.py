@@ -22,7 +22,7 @@ def main(page: ft.Page):
         ft.NavigationRailDestination(label = 'Administrativo',
                                      icon = ft.icons.SETTINGS,
                                      selected_icon = ft.icons.SETTINGS_OUTLINED)],
-        on_change = lambda e: print('Destino selectionado: ', e.control.selected_index)
+        on_change = lambda e: print('Destino selecionado: ', e.control.selected_index)
     )
     
     page.add(ft.Row([sidebar,
