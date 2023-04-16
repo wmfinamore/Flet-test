@@ -27,5 +27,11 @@ def main(page: ft.Page):
                              on_click = lambda x: print('Botão clicado...'))
     page.add(txt3, botao3)
     
+    txt4 = ft.Text('Exemplo de botão flutuante')# Botão flutuante
+    
+    botao4 = ft.FloatingActionButton(text = 'Add',
+                             on_click = lambda x: print('Botão clicado...'))
+    page.add(txt4, botao4)
+    
     
 ft.app(target = main)
