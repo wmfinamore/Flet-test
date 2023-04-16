@@ -19,4 +19,13 @@ def main(page: ft.Page):
                              on_click = lambda x: print('Botão clicado...'))
     page.add(txt2, botao2)
     
+    txt3 = ft.Text('Exemplo de botão preenchido')# Coloração visível durante a interação
+    
+    botao3 = ft.FilledTonalButton(text = 'Salvar',
+                             width = 200,
+                             height = 50,
+                             on_click = lambda x: print('Botão clicado...'))
+    page.add(txt3, botao3)
+    
+    
 ft.app(target = main)
