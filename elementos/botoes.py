@@ -41,4 +41,9 @@ def main(page: ft.Page):
                              on_click = lambda x: print('Pause'))
     page.add(txt5, botao5, botao5_1)
     
+    txt6 = ft.Text('Exemplo de botão delineado')
+    botao6 = ft.OutlinedButton(text = 'Confirmar',
+                               on_click = lambda x: print('Confirmado'))
+    page.add(txt6, botao6)
+    
 ft.app(target = main)
