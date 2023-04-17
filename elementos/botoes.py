@@ -33,5 +33,12 @@ def main(page: ft.Page):
                              on_click = lambda x: print('Botão clicado...'))
     page.add(txt4, botao4)
     
+    txt5 = ft.Text('Exemplo de botão ícone')
+    
+    botao5 = ft.IconButton(icon = ft.icons.PLAY_ARROW,
+                           on_click = lambda x: print('Play'))
+    botao5_1 = ft.IconButton(icon = ft.icons.PAUSE,
+                             on_click = lambda x: print('Pause'))
+    page.add(txt5, botao5, botao5_1)
     
 ft.app(target = main)
